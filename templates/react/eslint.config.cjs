@@ -5,7 +5,7 @@ const eslintConfigPrettier = require("eslint-config-prettier");
 
 module.exports = tseslint.config(
   {
-    ignores: ["dist", "node_modules"],
+    ignores: ["dist", "node_modules", "eslint.config.cjs"],
   },
   ...tseslint.configs.recommended,
   {
