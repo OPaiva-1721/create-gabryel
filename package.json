@@ -1,0 +1,38 @@
+{
+  "name": "create-gabryel",
+  "version": "1.0.0",
+  "description": "CLI para criar projetos NestJS DDD, React e Monorepo do jeito certo",
+  "bin": {
+    "create-gabryel": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --dts",
+    "dev": "tsup src/index.ts --format cjs --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "minimist": "^1.2.8",
+    "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "cli",
+    "nestjs",
+    "ddd",
+    "react",
+    "monorepo",
+    "template"
+  ],
+  "author": "Gabryel Paiva Neves",
+  "license": "MIT"
+}
