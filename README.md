@@ -26,6 +26,20 @@ npm create gabryel@latest meu-projeto --monorepo
 | `--react` | React 19 + Vite + TypeScript + path aliases |
 | `--monorepo` | Turborepo + pnpm workspaces (api + web) |
 
+## Scripts disponíveis nos projetos gerados
+
+Todo template criado já vem com testes e lint configurados:
+
+| Script | O que faz |
+|--------|-----------|
+| `npm run test` | Roda os testes (Jest no `--ddd`, Vitest no `--react`) |
+| `npm run lint` | Roda o ESLint |
+| `npm run format` | Formata o código com Prettier |
+
+No `--ddd`, também tem `npm run test:e2e` pros testes end-to-end.
+
+No `--monorepo`, usa `pnpm test` / `pnpm lint` na raiz pra rodar em todos os workspaces de uma vez (via Turborepo).
+
 ## Desenvolvimento local
 
 ```bash
