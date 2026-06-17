@@ -1,6 +1,6 @@
 {
   "name": "create-gabryel",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CLI para criar projetos NestJS DDD, React e Monorepo do jeito certo",
   "bin": {
     "create-gabryel": "dist/index.js"
